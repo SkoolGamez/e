@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!-- Created By Scripts :) for Laxor and Stellarox -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: auto;
+        }
+
+        #particle-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Ensure the particle container doesn't block interactions */
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: rgb(183, 0, 255);
+            animation: fall linear infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="particle-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const particleContainer = document.getElementById("particle-container");
+
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement("div");
+                particle.className = "particle";
+                particle.style.left = Math.random() * 100 + "vw";
+                particle.style.animationDuration = Math.random() * 2 + 1 + "s";
+                particleContainer.appendChild(particle);
+            }
+        });
+    </script>
+
+    <!-- navbar -->
+    <header>
+        <h1 class="logo">Laxor</h1>
+        <nav>
+            <ul class="nav-area top-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#commands">Showcase</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#support">Purchase</a></li>
+            </ul>
+        </nav>
+        <a href="https://discord.gg/RuTrshaUEZ" class="btn-area">Discord</a>
+    </header>
+    <!-- navbar end -->
+
+    <!-- home -->
+    <div class="wrapper">
+        <div class="home" id="home">
+            <div class="home-text">
+                <h1 id="botname">Laxor Aim</h1>
+                <h3 style="margin-left: 0;">Multi-Proccessor, Undeafeted, Untracable</h3>
+                <p class="bot-description">Laxor...
+                    Embark on a gaming journey like never before with Laxor Assistance, an unparalleled assistant crafted to elevate your gameplay in every way. Engineered for precision, realism, and unbeatable performance, Laxor Assistance is your ultimate key to dominating the competition.
+                </p>
+                <a href="#support" class="home-btn">Purchase</a>
+            </div>
+        </div>
+    </div>
+    <!-- home end -->
+
+    <!-- features -->
+    <div class="features">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="features"
+                    d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,202.7C672,171,768,117,864,96C960,75,1056,85,1152,106.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <div class="title">
+                <div class="th1">
+                    <h1>We Provide The Best</h1>
+                </div>
+                <center>
+                    <div class="thr">
+                        <hr>
+                    </div>
+                </center>
+            </div>
+            <!-- feature start -->
+            <div class="features-grid">
+                <div class="feature feature1">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h4>Extensive Image Training</h4>
+                    <p>Laxor Assistance goes beyond limits with a vast dataset of 7000 images, ensuring unmatched accuracy and adaptability across diverse in-game scenarios.</p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature2">
+                    <i class="fas fa-server"></i>
+                    <h4>Human-Like Movement</h4>
+                    <p>It's not just about accuracy; Laxor Assistance brings your gameplay to life with realistic movement patterns that seamlessly integrate with your style.</p>
+
+                </div>
+                <!-- feature end -->
+                <!-- feature start -->
+                <div class="feature feature3">
+                    <i class="fab fa-angellist"></i>
+                    <h4>Tournament-Grade Assurance
+                    </h4>
+                    <p>Engineered to meet tournament standards, Laxor Assistance provides a reliable and powerful tool for serious gamers aiming to outperform
+
+                </div>
+                <!-- feature end -->
+            </div>
+        </div>
+        <div class="curved">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="commands"
+                    d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,133.3C672,139,768,213,864,229.3C960,245,1056,203,1152,186.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- features end -->
+
+    <div class="wrapper reveal">
+
+        <div class="title">
+            <div class="th1">
+                <h1>Showcase</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+    <center>     
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+    <center>     
+    <!-- commands end -->
+    <!-- faq -->
+    <div class="faq">
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1" id="faq"
+                    d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="wrapper reveal">
+            <main id="questions" role="main">
+                <div class="title">
+                    <div class="th1">
+                        <h1>Frequently Asked Questions</h1>
+                    </div>
+                    <center>
+                        <div class="thr">
+                            <hr>
+                        </div>
+                    </center>
+                </div>
+                <input type="text" class="live-search-box" placeholder="Search an Answer..." />
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+
+                        <h2 class="question">1. e</h2>
+                        <span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> idk</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">2. e
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> idk</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">3. e
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> idk</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">4. e
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> idk</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">5. e
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> idk</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">6. e
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> idk</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">7. e
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> idk</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">8. e
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> idk</p>
+                </div>
+                <!-- question end -->
+                <!-- question start -->
+                <div class="topic">
+                    <div class="open">
+                        <h2 class="question">9. e
+                        </h2><span class="faq-t"></span>
+                    </div>
+                    <p class="answer"> idk</p>
+                </div>
+                <!-- question end -->
+            </main>
+        </div>
+        <div class="curve">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="1"
+                    d="M0,32L48,80C96,128,192,224,288,218.7C384,213,480,107,576,96C672,85,768,171,864,176C960,181,1056,107,1152,64C1248,21,1344,11,1392,5.3L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+    <!-- faq end -->
+    <div id="support"></div>
+    <!-- support server -->
+    <div class="wrapper reveal">
+        <div class="title">
+            <div class="th1">
+                <h1>Purchase Now</h1>
+            </div>
+            <center>
+                <div class="thr">
+                    <hr>
+                </div>
+            </center>
+        </div>
+        <!-- replace with your server widget and make the width 100% -->
+        <div class="topic">
+            <div class="open">
+                <h2 class="question">Prices
+                </h2><span class="faq-t"></span>
+            </div>
+            <p class="answer">Day: 5
+                Week: 40
+                Month: 135
+                Year: 300
+                Lifetime: 650</p>
+        </div>
+        <div>
+        <a href="https://discord.gg/RuTrshaUEZ" class="home-btn">Purchase</a>
+        </div>
+    <!-- support server end -->
+    <div class="curve">
+        <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill-opacity="1"
+                d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,202.7C672,224,768,224,864,224C960,224,1056,224,1152,234.7C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- footer -->
+    <footer>
+
+        <div class="wrapper">
+            <div class="foot">
+                <h1>Laxor Aim</h1>
+                <nav>
+                    <ul class="nav-area bottom-nav">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#commands">Showcase</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#support">Purchase</a></li>
+                    </ul>
+                </nav>
+                <h4>copyright ©2024 Laxor Aim</h4>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="main.js"></script>
+    <script src="commands.js"></script>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</body>
+
+
+</html>
